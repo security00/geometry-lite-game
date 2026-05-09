@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "geometry-lite-game",
+  "compatibility_date": "2026-05-09",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "geometrylitegame.net", "custom_domain": true, "zone_name": "geometrylitegame.net" },
+    { "pattern": "www.geometrylitegame.net", "custom_domain": true, "zone_name": "geometrylitegame.net" }
+  ]
+}
