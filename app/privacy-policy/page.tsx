@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
         </p>
         <h2 className="mt-8 text-2xl font-bold text-white">Contact</h2>
         <p className="mt-4">
-          If you have privacy questions about this website, please contact the site operator through the repository or domain owner contact channel.
+          If you have privacy questions about this website, please contact us at <a className="text-cyan-300 hover:underline" href="mailto:support@geometrylitegame.net">support@geometrylitegame.net</a>.
         </p>
       </article>
     </main>

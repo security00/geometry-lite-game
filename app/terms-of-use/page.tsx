@@ -29,6 +29,10 @@ export default function TermsOfUsePage() {
         <p className="mt-4">
           We may update these terms from time to time. Continued use of the website after changes means you accept the updated terms.
         </p>
+        <h2 className="mt-8 text-2xl font-bold text-white">Contact</h2>
+        <p className="mt-4">
+          For questions about these terms, contact us at <a className="text-cyan-300 hover:underline" href="mailto:support@geometrylitegame.net">support@geometrylitegame.net</a>.
+        </p>
       </article>
     </main>
   );

@@ -94,7 +94,8 @@ export default function Home() {
           <a className="hover:text-white" href="/privacy-policy">Privacy Policy</a>
           <a className="hover:text-white" href="/terms-of-use">Terms of Use</a>
         </nav>
-        <p className="mt-4">© 2026 Geometry Lite Game. All rights reserved.</p>
+        <p className="mt-4">Contact: <a className="hover:text-white" href="mailto:support@geometrylitegame.net">support@geometrylitegame.net</a></p>
+        <p className="mt-2">© 2026 Geometry Lite Game. All rights reserved.</p>
       </footer>
     </main>
   );
