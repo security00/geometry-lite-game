@@ -17,10 +17,10 @@ export default function Home() {
             Play instantly in your browser
           </p>
           <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
-            Geometry Lite Game
+            Geometry Dash Lite
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-300">
-            Play a fast rhythm platformer inspired by Geometry Dash. Jump over spikes, follow the music, and restart quickly until every move feels automatic.
+            Play Geometry Dash Lite online for free. This browser version brings the fast jumps, spike dodging, rhythm timing, and instant restarts that make Geometry Dash so addictive.
           </p>
         </div>
 
@@ -31,13 +31,13 @@ export default function Home() {
               <span className="h-3 w-3 rounded-full bg-yellow-400" />
               <span className="h-3 w-3 rounded-full bg-green-400" />
             </div>
-            <span className="text-sm text-slate-400">Geometry Lite</span>
+            <span className="text-sm text-slate-400">Geometry Dash Lite</span>
           </div>
           <div className="relative aspect-[16/9] min-h-[420px] w-full bg-black">
             <iframe
               id="game-iframe"
               src={gameUrl}
-              title="Geometry Lite Game"
+              title="Geometry Dash Lite Game"
               scrolling="no"
               allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; accelerometer; gyroscope;"
               allowFullScreen
@@ -51,12 +51,12 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
         <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 leading-8 text-slate-300 sm:p-8">
-          <h2 className="text-3xl font-bold text-white">How to Play Geometry Lite Game</h2>
+          <h2 className="text-3xl font-bold text-white">How to Play Geometry Dash Lite</h2>
           <p className="mt-4">
-            Geometry Lite Game is a side-scrolling platformer where your character moves forward automatically. Your job is to jump at the right time, avoid spikes and walls, and survive each rhythm-based section.
+            Geometry Dash Lite is a side-scrolling rhythm platformer where your cube moves forward automatically. Your job is to jump at the right time, avoid spikes and walls, and survive each music-synced section.
           </p>
           <p className="mt-4">
-            The challenge comes from timing. A single mistake sends you back to the start, but every attempt teaches you more about the level. The more you play, the more you memorize each jump, portal, and obstacle pattern.
+            The challenge comes from timing. A single mistake sends you back to the start, but every attempt teaches you more about the level. The more you play Geometry Dash, the more you memorize each jump, portal, and obstacle pattern.
           </p>
           <h3 className="mt-8 text-2xl font-bold text-white">Follow the Rhythm</h3>
           <p className="mt-4">
@@ -65,6 +65,10 @@ export default function Home() {
           <h3 className="mt-8 text-2xl font-bold text-white">Watch the Obstacles</h3>
           <p className="mt-4">
             Portals, pads, and orbs can change how your character moves. Some flip gravity, some launch you forward, and others change the pace of the run. Learn what each object does before trying to rush through the level.
+          </p>
+          <h3 className="mt-8 text-2xl font-bold text-white">Geometry Dash vs Geometry Dash Lite</h3>
+          <p className="mt-4">
+            Geometry Dash is the main rhythm platformer series, while Geometry Dash Lite is the free version many players use to practice the core gameplay. This page focuses on quick browser play for players searching for Geometry Dash and Geometry Dash Lite.
           </p>
         </article>
 

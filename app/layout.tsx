@@ -13,8 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Geometry Lite Game - Play Geometry Lite Online",
-  description: "Play Geometry Lite Game online for free. Jump through spikes, follow the rhythm, and enjoy a fast Geometry Dash inspired browser platformer.",
+  metadataBase: new URL("https://geometrylitegame.net"),
+  title: "Geometry Dash Lite - Play Geometry Dash Online Free",
+  description:
+    "Play Geometry Dash Lite online for free. Jump through spikes, follow the rhythm, and enjoy a fast Geometry Dash browser platformer.",
+  alternates: {
+    canonical: "https://geometrylitegame.net/",
+  },
+  keywords: [
+    "geometry dash",
+    "geometry dash lite",
+    "geometry dash online",
+    "geometry lite game",
+    "geometry game",
+  ],
+  openGraph: {
+    title: "Geometry Dash Lite - Play Geometry Dash Online Free",
+    description:
+      "Play Geometry Dash Lite online for free in your browser. Jump, dodge spikes, follow the rhythm, and practice each level.",
+    url: "https://geometrylitegame.net/",
+    siteName: "Geometry Lite Game",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Geometry Dash Lite - Play Geometry Dash Online Free",
+    description:
+      "Play Geometry Dash Lite online for free. A fast rhythm platformer inspired by Geometry Dash.",
+  },
 };
 
 export default function RootLayout({
