@@ -87,6 +87,15 @@ export default function Home() {
           </div>
         </aside>
       </section>
+
+      <footer className="border-t border-white/10 px-4 py-8 text-center text-sm text-slate-400">
+        <nav className="flex flex-wrap justify-center gap-4">
+          <a className="hover:text-white" href="/about">About Us</a>
+          <a className="hover:text-white" href="/privacy-policy">Privacy Policy</a>
+          <a className="hover:text-white" href="/terms-of-use">Terms of Use</a>
+        </nav>
+        <p className="mt-4">© 2026 Geometry Lite Game. All rights reserved.</p>
+      </footer>
     </main>
   );
 }
