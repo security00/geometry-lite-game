@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Geometry Lite Game - Play Geometry Lite Online",
-  description: "Play Geometry Lite online. Jump, dodge spikes, and test your rhythm in a fast browser geometry challenge.",
+  description: "Play Geometry Lite Game online for free. Jump through spikes, follow the rhythm, and enjoy a fast Geometry Dash inspired browser platformer.",
 };
 
 export default function RootLayout({

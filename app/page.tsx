@@ -1,74 +1,87 @@
-const features = [
-  "Fast browser gameplay with no download required",
-  "Simple one-button controls that are easy to learn",
-  "Rhythm-based jumps, spikes, portals, and tight timing",
-  "Lightweight page built for desktop and mobile players",
+const gameUrl =
+  "https://games.crazygames.com/en_US/geometry-dash-online/index.html?czyExpNexx360UserSync_CZY_18427=ineligible&isNewUser=true&skipPrerollFirstSession=true&v=1.356";
+
+const tips = [
+  "Use Practice Mode to break difficult sections into smaller patterns.",
+  "Listen to the music because many jumps line up with the beat.",
+  "Watch portals, pads, and orbs carefully because they change speed, gravity, and movement mode.",
+  "Stay patient. Geometry games are built around quick restarts and pattern memorization.",
 ];
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <section className="mx-auto flex min-h-screen w-full max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
-        <p className="mb-4 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-200">
-          geometrylitegame.net
-        </p>
-        <h1 className="max-w-4xl text-5xl font-black tracking-tight sm:text-7xl">
-          Play <span className="text-cyan-300">Geometry Lite</span> Online
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-          Jump through sharp obstacles, follow the beat, and keep your cube alive in a clean, lightweight geometry runner experience.
-        </p>
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-          <a
-            href="#play"
-            className="rounded-full bg-cyan-300 px-8 py-3 text-base font-bold text-slate-950 transition hover:bg-cyan-200"
-          >
-            Play Now
-          </a>
-          <a
-            href="#guide"
-            className="rounded-full border border-white/20 px-8 py-3 text-base font-bold text-white transition hover:bg-white/10"
-          >
-            How to Play
-          </a>
+      <section className="mx-auto flex w-full max-w-7xl flex-col gap-8 px-4 py-8 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1 text-sm font-medium text-cyan-200">
+            Play instantly in your browser
+          </p>
+          <h1 className="text-4xl font-black tracking-tight sm:text-6xl">
+            Geometry Lite Game
+          </h1>
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-slate-300">
+            Play a fast rhythm platformer inspired by Geometry Dash. Jump over spikes, follow the music, and restart quickly until every move feels automatic.
+          </p>
         </div>
 
-        <div id="play" className="mt-14 w-full max-w-4xl overflow-hidden rounded-3xl border border-white/10 bg-slate-900 shadow-2xl shadow-cyan-950/40">
-          <div className="flex items-center gap-2 border-b border-white/10 bg-slate-900 px-4 py-3">
-            <span className="h-3 w-3 rounded-full bg-red-400" />
-            <span className="h-3 w-3 rounded-full bg-yellow-400" />
-            <span className="h-3 w-3 rounded-full bg-green-400" />
-            <span className="ml-3 text-sm text-slate-400">Geometry Lite</span>
+        <div id="play" className="overflow-hidden rounded-3xl border border-white/10 bg-black shadow-2xl shadow-cyan-950/40">
+          <div className="flex items-center justify-between border-b border-white/10 bg-slate-900 px-4 py-3">
+            <div className="flex items-center gap-2">
+              <span className="h-3 w-3 rounded-full bg-red-400" />
+              <span className="h-3 w-3 rounded-full bg-yellow-400" />
+              <span className="h-3 w-3 rounded-full bg-green-400" />
+            </div>
+            <span className="text-sm text-slate-400">Geometry Lite</span>
           </div>
-          <div className="flex aspect-video flex-col items-center justify-center bg-gradient-to-br from-slate-800 via-slate-950 to-cyan-950 p-8">
-            <div className="mb-6 grid h-20 w-20 rotate-45 place-items-center rounded-xl bg-cyan-300 shadow-lg shadow-cyan-400/40" />
-            <p className="max-w-md text-slate-300">
-              Game embed placeholder. The playable build can be connected here once the game source is ready.
-            </p>
+          <div className="relative aspect-[16/9] min-h-[420px] w-full bg-black">
+            <iframe
+              id="game-iframe"
+              src={gameUrl}
+              title="Geometry Lite Game"
+              scrolling="no"
+              allow="autoplay; payment; fullscreen; microphone; focus-without-user-activation *; screen-wake-lock; gamepad; clipboard-read; clipboard-write; accelerometer; gyroscope;"
+              allowFullScreen
+              sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-scripts allow-same-origin allow-downloads allow-popups allow-popups-to-escape-sandbox"
+              loading="eager"
+              className="absolute left-0 top-0 h-full w-full border-0"
+            />
           </div>
         </div>
       </section>
 
-      <section id="guide" className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-            <h2 className="text-3xl font-bold">How to Play</h2>
-            <p className="mt-4 text-slate-300">
-              Press, tap, or click to jump. Time every move with the rhythm, avoid spikes, and learn each section by practice.
-            </p>
+      <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
+        <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 leading-8 text-slate-300 sm:p-8">
+          <h2 className="text-3xl font-bold text-white">How to Play Geometry Lite Game</h2>
+          <p className="mt-4">
+            Geometry Lite Game is a side-scrolling platformer where your character moves forward automatically. Your job is to jump at the right time, avoid spikes and walls, and survive each rhythm-based section.
+          </p>
+          <p className="mt-4">
+            The challenge comes from timing. A single mistake sends you back to the start, but every attempt teaches you more about the level. The more you play, the more you memorize each jump, portal, and obstacle pattern.
+          </p>
+          <h3 className="mt-8 text-2xl font-bold text-white">Follow the Rhythm</h3>
+          <p className="mt-4">
+            Keep the sound on if possible. Many jumps and movements are synced to the background music, so listening to the beat can help you predict when to jump.
+          </p>
+          <h3 className="mt-8 text-2xl font-bold text-white">Watch the Obstacles</h3>
+          <p className="mt-4">
+            Portals, pads, and orbs can change how your character moves. Some flip gravity, some launch you forward, and others change the pace of the run. Learn what each object does before trying to rush through the level.
+          </p>
+        </article>
+
+        <aside className="rounded-3xl border border-cyan-300/20 bg-cyan-300/10 p-6 sm:p-8">
+          <h2 className="text-3xl font-bold text-white">Tips & Tricks</h2>
+          <ul className="mt-6 space-y-4 text-slate-200">
+            {tips.map((tip) => (
+              <li key={tip} className="flex gap-3">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan-300" />
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8 rounded-2xl bg-black/20 p-5 text-sm leading-7 text-slate-300">
+            <strong className="text-white">Goal:</strong> survive as long as possible, learn the rhythm, and clear the level without crashing.
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
-            <h2 className="text-3xl font-bold">Why Play Here?</h2>
-            <ul className="mt-4 space-y-3 text-left text-slate-300">
-              {features.map((feature) => (
-                <li key={feature} className="flex gap-3">
-                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-cyan-300" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+        </aside>
       </section>
     </main>
   );
